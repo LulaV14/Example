@@ -7,7 +7,7 @@
 	<title>Colored Lists | <?php echo $pageTitle ?></title>
 
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 </head>
