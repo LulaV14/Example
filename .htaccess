@@ -1,0 +1,22 @@
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)(\.gz)?$">
+Header set Expires "Thu, 15 Apr 2012 20:00:00 GMT"
+Header unset ETag
+FileETag None
+</FilesMatch>
+
+# <Files ~ "\.inc\.php$">
+# Order allow,deny
+# Deny from all
+# </Files>
+
+# <Files ~ "^(base|lists|users|ads|close|header)\.php$">
+# Order allow,deny
+# Deny from all
+# </Files>
+
+RewriteEngine on
+RewriteBase /
+Options +FollowSymLinks
+
+RewriteRule \.(gif|jpg|png|css|ico|swf|js|php|inc\.php) - [L]
+RewriteRule ^(\w+)\.html$ index.php?list=$1
